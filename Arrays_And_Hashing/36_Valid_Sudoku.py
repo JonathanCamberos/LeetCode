@@ -29,7 +29,9 @@ def isValidSudoku_2(self, board: List[List[str]]) -> bool:
             tmp = board[i][j]
             if tmp != ".":    
                 box = 3 * (i//3) + (j//3)
-                if tmp in rows[i] or tmp in col[j] or tmp in boxes[box]:
+                if (tmp in rows[i] or 
+                   tmp in col[j]  or 
+                   tmp in boxes[box]):
                     return False
                 col[j].append(tmp)
                 rows[i].append(tmp)

@@ -15,3 +15,11 @@ def alphaNum_1(self, c):
     return (ord('A') <= ord(c) <= ord('Z') or 
             ord('a') <= ord(c) <= ord('z') or 
             ord('0') <= ord(c) <= ord('9'))
+
+
+def isPalindrome_2(self, s:str) -> bool:
+    ans = ""
+    for c in s.lower():
+        if c.isalnum():
+            ans += c
+    return ans == ans[::-1]
