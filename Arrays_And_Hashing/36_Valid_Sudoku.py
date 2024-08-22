@@ -14,9 +14,7 @@ def isValidSudoku_1(self, board: List[List[str]]) -> bool:
             ):
                 return False
             cols[c].add(board[r][c])
-            rows[| 1 | 3 | 4 | 5 | 7 | 10 | 11 |    Target = 9
-
-L^ ------------- R^r].add(board[r][c])
+            rows[r].add(board[r][c])
             squares[(r // 3, c // 3)].add(board[r][c])
 
     return True
