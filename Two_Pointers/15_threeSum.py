@@ -1,4 +1,4 @@
-def threeSum(self, nums: List[int]) -> List[List[int]]:
+def threeSum_1(self, nums: List[int]) -> List[List[int]]:
     p, n, z = [], [], []
     res = set()
 
@@ -38,3 +38,7 @@ def threeSum(self, nums: List[int]) -> List[List[int]]:
                 res.add(tuple(sorted([n_target, p[i], p[j]])))
 
     return res
+
+
+def threeSum_2(self, nums: List[int]) -> List[List[int]]:
+    
